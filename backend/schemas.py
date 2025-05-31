@@ -8,7 +8,7 @@ class MessageAnalysis(BaseModel): #schema for api response
     explanation: str
     recommended_action: str
 
-class PlaceResult(BaseModel):
+class PlaceResult(BaseModel): #schema for places in resources search
     name: str
     address: str
     place_id: str
