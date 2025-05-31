@@ -1,10 +1,9 @@
 import os #eventually will want API keys as environment vars
 import googlemaps
 from backend.schemas import PlaceResult
+from config import MAPS_API_KEY
 
-maps_api_key = "" #maps official docs were useless
-
-map = googlemaps.Client(maps_api_key)
+map = googlemaps.Client(MAPS_API_KEY) #maps official docs were useless
 
 def resource_search(query: str):
     try:

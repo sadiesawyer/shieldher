@@ -2,8 +2,9 @@ import os
 from google import genai
 from google.genai import types
 from backend.schemas import MessageAnalysis
+from config import GEMINI_API_KEY
 
-client = genai.Client(api_key="") #https://ai.google.dev/gemini-api/docs/quickstart
+client = genai.Client(api_key=GEMINI_API_KEY) #https://ai.google.dev/gemini-api/docs/quickstart
 
 def threat_scan(message: str):
     prompt = f"""
