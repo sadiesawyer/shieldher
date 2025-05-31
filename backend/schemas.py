@@ -14,6 +14,10 @@ class PlaceResult(BaseModel): #schema for places in resources search
     place_id: str
     website: str
 
+class SignUpRequest(BaseModel):
+    email: str
+    password: str
+    password2: str
 
 
 
