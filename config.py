@@ -7,6 +7,7 @@ load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 MAPS_API_KEY = os.getenv("MAPS_API_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DATABASE_URL = "sqlite:///shieldher.db"
 
