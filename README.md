@@ -1,4 +1,4 @@
-# shieldher# ShieldHer
+# ShieldHer
 
 ShieldHer is a cybersecurity platform designed to help protect women and students from online harassment, manipulation, and digital abuse. The platform uses AI to assess messages for threats, helps users find legal and support resources nearby, and offers secure incident logging with the option to export reports for authorities or school staff.
 
