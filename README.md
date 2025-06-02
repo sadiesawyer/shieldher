@@ -18,7 +18,6 @@ ShieldHer is a cybersecurity platform designed to help protect women and student
 - Google Gemini API for threat scanning
 - Google Maps API for resource lookup
 - PyJWT for token-based authentication
-- passlib (bcrypt) for password hashing
 
 **Frontend** (in progress)
 - React
@@ -29,8 +28,7 @@ ShieldHer is a cybersecurity platform designed to help protect women and student
 
 - The app uses modular endpoints for message analysis, resource search, and incident reporting.
 - All sensitive user actions are protected by a basic login system using JWT tokens.
-- Passwords are hashed with bcrypt before storage.
-- A `.env` file is used to securely manage API keys and configuration settings.
+- Passwords are hashed before storage.
 - Incident logs are tied to user accounts and designed to eventually support image uploads and report export.
 
 ## Upcoming Features
@@ -38,9 +36,6 @@ ShieldHer is a cybersecurity platform designed to help protect women and student
 - Image upload support for screenshots and evidence
 - PDF export for incident logs
 - Frontend UI for login, scanning, and reviewing incidents
-- Admin view for advocates or legal professionals
-- Breach alert system for compromised emails
-- Multi-language support for broader accessibility
 
 ## Current Status
 
@@ -48,4 +43,4 @@ The backend is functional, including login, signup, threat scanning, and inciden
 
 ## Contact
 
-Developed by Sadie Sawyer. For questions or suggestions, contact sadiesawyer1@icloud.com.
+Developed by Sadie Sawyer. For questions or suggestions, contact sadiesawyer25@gmail.com
