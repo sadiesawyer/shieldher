@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from backend.schemas import Message, SignUpRequest, Token
+from backend.schemas import Message, SignUpRequest, Token, Incident
 from backend.gemini_service import *
 from backend.maps_service import resource_search
 from backend.models import User
@@ -67,3 +67,12 @@ def get_current_user(token: str = Depends(oauth2_scheme)): #dependency function.
 @app.get("/who-am-i")
 async def get_me():
     return get_current_user()
+
+@app.post("/report-incident")
+async def report_incident(incident: Incident):
+    db = SessionLocal()
+    db.add(incident)
+    db.commit()
+    db.refresh(incident)
+    db.close()
+
