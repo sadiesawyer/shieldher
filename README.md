@@ -18,6 +18,7 @@ ShieldHer is a cybersecurity platform designed to help protect women and student
 - Google Gemini API for threat scanning
 - Google Maps API for resource lookup
 - PyJWT for token-based authentication
+- Deployment on RedHat OpenShift
 
 **Frontend** (in progress)
 - React
