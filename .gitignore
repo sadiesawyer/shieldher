@@ -5,3 +5,8 @@ backend/__pycache__
 *.env
 .env
 config.py
+shieldher-frontend/node_modules/
+shieldher-frontend/node_modules/
+shieldher-frontend/dist/
+shieldher-frontend/.vite/
+node_modules/
